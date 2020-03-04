@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cin >> a >> b;
+    for (int i = 1; i < 10000; i++)
+    {
+        a *= 3;
+        b *= 2;
+        if (a > b)
+        {
+            cout << i << endl;
+            return 0;
+        }
+    }
+
+    return 0;
+}
